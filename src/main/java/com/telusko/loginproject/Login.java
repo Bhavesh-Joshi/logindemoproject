@@ -16,7 +16,7 @@ public class Login extends HttpServlet{
 	int count = 0;
     	try{
         	Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "root");
+		Connection con = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com:3306/sql12191609", "sql12191609", "gTmV66I3Fb");
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery("Select * from login;");
 		while(rs.next()){
